@@ -1,0 +1,26 @@
+#FUNCIONES CON BBDD
+
+## PARA EL USO DE FUNCIONES HACE FALTA ESTAR DENTRO DE UNA BASE DE DATOS O CREAR UNA. EN MI CASO CREO UNA BASE DE DATOS QUE SE LLAMA FUNCIONES
+
+´´´SQL
+create database Funciones
+go
+
+use Funciones
+go
+```
+
+
+´´´SQL
+
+```
+
+
+´´´SQL
+
+```
+
+
+´´´SQL
+
+```
