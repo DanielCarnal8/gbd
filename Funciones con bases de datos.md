@@ -9,6 +9,7 @@ go
 use Funciones
 go
 ```
+### UNA VEZ HECHO EN PASO ANTERIOR YA PODEMOS REALIZAR FUNCIONES
 
 
 
