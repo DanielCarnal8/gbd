@@ -12,5 +12,20 @@ go
 #### UNA VEZ HECHO EN PASO ANTERIOR YA PODEMOS REALIZAR FUNCIONES
 
 
+##FUNCIÓN QUE TE DA UN MENSAJE EN PANTALLA 
 
 
+```sql
+drop function if exists holamundo
+go
+
+create function dbo.holamundo()
+returns varchar(20)
+as
+	Begin
+		return 'Hola mundo'
+	end
+go
+
+select dbo.holamundo() as Mensaje
+```
