@@ -39,7 +39,7 @@ as
 select dbo.CalculoNumeroAños('2008/01/01','2020/05/05') as Fecha
 ```
 
-## MISMA FUNCIÓN ANTERIORPERO CON LA HORA DEL SISTEMA
+## MISMA FUNCIÓN ANTERIOR QUE LA ANTERIOR PERO CON LA HORA DEL SISTEMA
 
 ```sql
 drop function if exists CalculoFechaSistema
