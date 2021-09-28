@@ -37,3 +37,42 @@ end
 
 exec Trapecio 10,8,5
 ```
+## CALCULADORA
+```sql
+drop procedure if exists calculadora
+go
+
+create procedure calculadora
+@num_1 int,
+@num_2 int,
+@opera char(1)
+
+as
+	begin
+		declare
+			@resultado int
+-- procedie¡miento para la suma --
+		if @opera= '+'
+			begin
+				set @resultado=(@num_1+@num_2)
+				print 'El resultado de la suma es: '+cast (@resultado as varchar(10))
+			end
+		if @opera= '-'
+			begin
+				set @resultado=(@num_1-@num_2)
+				print 'El resultado de la resta es: '+cast (@resultado as varchar(10))
+			end
+		if @opera= '*'
+			begin
+				set @resultado=(@num_1*@num_2)
+				print 'El resultado de la multiplicacion es: '+cast (@resultado as varchar(10))
+			end
+		if @opera= '/'
+			begin
+				set @resultado=(@num_1/@num_2)
+				print 'El resultado de la division es: '+cast (@resultado as varchar(10))
+			end
+	end
+
+exec calculadora 15,8,'-'
+```
