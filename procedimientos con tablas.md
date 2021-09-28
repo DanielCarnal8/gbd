@@ -34,7 +34,6 @@ values
 ('0008','Maria','1213141','Italia','PayPal',650),
 ('0009','Clara','21222324','España','Transferencia',220650),
 ('0010','John','9192939','EEUU','Transferencia',900540)
-go!
-[sql](https://user-images.githubusercontent.com/72084639/135062409-271c306a-cbe2-4acd-848c-717e570bdf01.PNG)
-
+go
 ```
+![sql](https://user-images.githubusercontent.com/72084639/135062409-271c306a-cbe2-4acd-848c-717e570bdf01.PNG)
