@@ -52,7 +52,7 @@ as
 select dbo.F_promedio(15,20) as 'El numero promedio es: '
 ```
 
-##FUNCIÓN QUE INDICA EL NÚMERO MÁS GRANDE ENTRE TRES DE ESTOS
+## FUNCIÓN QUE INDICA EL NÚMERO MÁS GRANDE ENTRE TRES DE ESTOS
 
 ```sql
 drop function if exists CalcularMayor
