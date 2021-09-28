@@ -38,3 +38,26 @@ as
 
 select dbo.CalculoNumeroAños('2008/01/01','2020/05/05') as Fecha
 ```
+
+## MISMA FUNCIÓN ANTERIORPERO CON LA HORA DEL SISTEMA
+
+```sql
+drop function if exists CalculoFechaSistema
+go
+
+create function dbo.CalculoFechaSistema
+(
+@f_inicial date
+)
+returns int
+as
+	begin
+		declare
+			@años int
+			set @años=DATEDIFF(YEAR, @f_inicial,GETDATE())
+			return @años
+	end
+
+select dbo.CalculoFechaSistema('2008/01/01') as Años
+
+```
