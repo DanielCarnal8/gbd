@@ -18,3 +18,22 @@ end
 exec suma 12,9  -- una vez ejecutada la suma la podremos ejecutar las veces que queramos porque estamos borrando el procedimeinto --
 
 ```
+## AREAS, EN ESTE CASO DE UN TRAPECIO
+```sql 
+drop procedure if exists Trapecio
+go
+
+create procedure Trapecio
+@base_Ma int,
+@base_me int,
+@altura int
+as
+	begin
+		declare
+			@area int
+		set @area=((@base_MA+@base_me)*@altura)/2
+		print 'EL valor del area es: '+cast(@area as varchar(5))
+end
+
+exec Trapecio 10,8,5
+```
