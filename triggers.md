@@ -5,4 +5,5 @@
 
 
 ## Trigger que va a controlar la organizacion de los delete que hagamos en un tabla.
-![trigger2](https://user-images.githubusercontent.com/72084639/135064342-6ab2d99a-93d7-47ed-87dc-178745334815.PNG)
+![t3](https://user-images.githubusercontent.com/72084639/135064591-875852ec-587e-4e5f-85bb-4fb16d2c4cb7.PNG)
+
