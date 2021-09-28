@@ -51,3 +51,42 @@ as
 
 select dbo.F_promedio(15,20) as 'El numero promedio es: '
 ```
+
+##FUNCIÓN QUE INDICA EL NÚMERO MÁS GRANDE ENTRE TRES DE ESTOS
+
+```sql
+drop function if exists CalcularMayor
+go
+
+create function dbo.CalcularMayor
+(
+@numero1 dec(6,3),
+@numero2 dec(6,3),
+@numero3 dec(6,3)
+)
+returns varchar (50)
+as
+	begin
+		declare
+			@mayor dec(6,3)
+		if(@numero1=@numero2) and (@numero1=@numero3)
+			return 'Los tres numero son iguales'
+		else
+			if(@numero1>@numero2) and (@numero1>@numero3)
+				begin
+					set @mayor=@numero1
+					return 'El mayor numero de los 3 es: '+cast(@mayor as varchar(30))
+				end
+				else
+					if(@numero2>@numero1) and (@numero2>@numero3)
+						begin
+							set @mayor=@numero2
+							return 'El mayor numero de los 3 es: '+cast(@mayor as varchar(30))
+						end
+				else
+					set @mayor=@numero3
+					return 'El mayor numero de los 3 es: '+cast(@mayor as varchar(30))
+	end
+
+select dbo.CalcularMayor(10,108,100) as Mensaje
+```
